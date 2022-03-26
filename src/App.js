@@ -1,11 +1,12 @@
 import { MenuItem } from "./components/MenuItem";
+// import { LiveMenu } from "./components/LiveMenu";
 // import { AccountMenuItem } from "./components/AccountMenuItem";
 // import { NavigationMenuItem } from "./components/NavigationMenuItem";
 
 
 // добавить фейк апи, где мы будем получать с фэйк бэка все меню айтемы, если сможешь
 // ЗАменить а на реакт роутинг и дальше буем работать через реакт роутинг
-// Подключить гитхаб
+
 const menuItems = [
   {
     title: "События",
@@ -77,8 +78,9 @@ function App() {
 {/* Изменить с ul на div и сделать отдельный компонент */}
 
 
-     <ul className="headerRight">
-       <li className="live">
+      
+      <div className="headerRight">
+      <li className="live">
          <img width={55} height={26} src="/img/live.png" alt="live" />
        </li>
        <li>
@@ -87,11 +89,12 @@ function App() {
        <li className="liRight">
        <img width={18} height={18} src="/img/qt.svg" alt="qt"/>
        </li>
-     </ul>
+      </div>
+  
+
    </header>
  
 
-  
 
   </div>
 }
