@@ -1,11 +1,6 @@
 import { MenuItem } from "./components/MenuItem";
-// import { LiveMenu } from "./components/LiveMenu";
-// import { AccountMenuItem } from "./components/AccountMenuItem";
-// import { NavigationMenuItem } from "./components/NavigationMenuItem";
+import LiveMenu from "./components/LiveMenu";
 
-
-// добавить фейк апи, где мы будем получать с фэйк бэка все меню айтемы, если сможешь
-// ЗАменить а на реакт роутинг и дальше буем работать через реакт роутинг
 
 const menuItems = [
   {
@@ -47,7 +42,6 @@ const menuItems = [
 
 
 function App() {
-  // return (<Layout>{Children}</Layout>)
   return <div className="wrapper">
    <header>
      <div className="headerLeft">
@@ -57,8 +51,6 @@ function App() {
          <h3>РЕГИОН</h3>
        </div>
      </div>
-{/* Сделатть базовый компонент menuItems, на основании его выделить 2 компонента "navigationMenuItem", "accountMenuItems"*/}
-
 
 
 <div className="menuNavigation">
@@ -75,22 +67,8 @@ function App() {
     </div>
     
 
-{/* Изменить с ul на div и сделать отдельный компонент */}
-
-
+     <LiveMenu />
       
-      <div className="headerRight">
-      <li className="live">
-         <img width={55} height={26} src="/img/live.png" alt="live" />
-       </li>
-       <li>
-       <img width={18} height={18} src="/img/src.svg" alt="src"/>
-       </li>
-       <li className="liRight">
-       <img width={18} height={18} src="/img/qt.svg" alt="qt"/>
-       </li>
-      </div>
-  
 
    </header>
  
